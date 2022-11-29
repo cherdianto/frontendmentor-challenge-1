@@ -1,5 +1,7 @@
 # Frontend Mentor - Single price grid component
 
-## challenge 1
+### Here is the desktop result
+![Desktop](./result/desktop.png)
 
-### Built with HTML & CSS
+### Here is the mobile result
+![Desktop](./result/mobile.png)
