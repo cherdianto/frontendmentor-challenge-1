@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'karla';
+    font-size: 16px;
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    background-color: #fff;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "first first" "second third";
+    overflow: hidden;
+    margin: 0 20px;
+}
+
+/* FIRST COMPONENT */
+.first-component {
+    grid-area: first;
+    /* padding: 40px; */
+}
+h1 {
+    color: hsl(179, 62%, 43%);
+    padding-bottom: 20px;
+}
+
+.first-component h3 {
+    color: hsl(71, 73%, 54%);
+    padding-bottom: 20px;
+}
+
+.first-component p {
+    line-height: 1.75rem;
+    color: hsl(218, 22%, 67%);
+}
+
+/* SECOND COMPONENT */
+.second-component {
+    grid-area: second;
+    /* padding: 40px; */
+    background-color: hsl(179, 62%, 43%);
+    color: #fff;
+}
+
+.second-component h2 {
+    padding-bottom: 20px;
+}
+
+.second-component p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 15px;
+}
+
+.second-component p span.price {
+    font-size: 36px;
+    color: #fff;
+}
+
+.second-component p span {
+    color: hsl(204, 43%, 93%);
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background-color: hsl(71, 73%, 54%);
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+    margin-top: 18px;
+}
+
+
+/* THIRD COMPONENT */
+.third-component {
+    grid-area: third;
+    /* padding: 40px; */
+    background-color: hsl(179, 44%, 56%);
+    color: #fff;
+}
+
+.third-component h2 {
+    padding-bottom: 15px;
+}
+
+.third-component ul {
+    list-style: none;
+}
+
+ul li {
+    padding: 3px 0;
+}
+
+
+
+/* utilities */
+.bold {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.p-component {
+    padding: 40px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 375px) {
+    .wrapper {
+        grid-template-columns: 100%;
+        grid-template-areas: "first" "second" "third";
+    }
+
+    .p-component {
+        padding: 25px;
+    }
+}
