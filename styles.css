@@ -29,6 +29,8 @@ body {
     grid-template-areas: "first first" "second third";
     overflow: hidden;
     margin: 0 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+
 }
 
 /* FIRST COMPONENT */
